@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 app.use(express.json());
 const roleRoutes = require("./routes/RoleRoutes");
+const userRoutes = require("./routes/UserRoutes");
 
 
 const PORT = 5000;
@@ -24,6 +25,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/quidditch", {
 //routes entries...
 
 app.use('/role',roleRoutes)
+app.use('/user',userRoutes)
 
 
 

@@ -10,4 +10,5 @@ const roleController = require('../controller/RoleController');
 router.post('/role',roleController.addRole)
 router.get('/role',roleController.getRoles)
 
+
 module.exports = router;
